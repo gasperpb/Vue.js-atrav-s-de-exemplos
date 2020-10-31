@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abas</title>
+</head>
+
+<body>
+    <div id="abas">
+        <nav>
+            <a href="#aba1">Aba1</a>
+            <a href="#aba2">Aba2</a>
+            <a href="#aba3">Aba3</a>
+        </nav>
+        <div id="aba1" v-if="aba=='aba1'">
+            <h1> Aqui vai o conteúdo da aba 1</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et a iste ipsa accusamus animi eos sint repellat! Iusto nisi possimus nihil cum minima aliquam, aspernatur repellat tempora dolore placeat dignissimos?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quam nisi eos itaque rerum, commodi nulla mollitia unde voluptatem veniam tenetur porro ut eveniet maiores ullam quia cupiditate perferendis labore.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat officiis beatae tenetur laudantium, aliquid numquam exercitationem corrupti odit architecto nulla possimus cum voluptates. Vel unde voluptates fugit delectus odio sunt.</p>
+        </div>
+        <div id="aba2" v-if="aba=='aba2'">
+            <h1> Aqui vai o conteúdo da aba 1</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et a iste ipsa accusamus animi eos sint repellat! Iusto nisi possimus nihil cum minima aliquam, aspernatur repellat tempora dolore placeat dignissimos?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quam nisi eos itaque rerum, commodi nulla mollitia unde voluptatem veniam tenetur porro ut eveniet maiores ullam quia cupiditate perferendis labore.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat officiis beatae tenetur laudantium, aliquid numquam exercitationem corrupti odit architecto nulla possimus cum voluptates. Vel unde voluptates fugit delectus odio sunt.</p>
+        </div>
+        <div id="aba3" v-if="aba=='aba3'">
+            <h1> Aqui vai o conteúdo da aba 1</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et a iste ipsa accusamus animi eos sint repellat! Iusto nisi possimus nihil cum minima aliquam, aspernatur repellat tempora dolore placeat dignissimos?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quam nisi eos itaque rerum, commodi nulla mollitia unde voluptatem veniam tenetur porro ut eveniet maiores ullam quia cupiditate perferendis labore.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat officiis beatae tenetur laudantium, aliquid numquam exercitationem corrupti odit architecto nulla possimus cum voluptates. Vel unde voluptates fugit delectus odio sunt.</p>
+        </div>
+
+
+
+
+    </div>
+
+    <script src="vue.min.js"></script>
+    <script>
+        new Vue({
+            el: '#abas',
+            data: {
+                aba: 'aba1'
+
+            }
+        })
+    </script>
+</body>
+
+</html>
